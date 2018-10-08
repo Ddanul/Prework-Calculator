@@ -10,8 +10,7 @@ namespace Prework_Calculator
             Console.Write("Type number to choose method - (1) Add, (2) Subtract, (3) Multiply, (4) Divide: ");
             string method = Console.ReadLine();
             int methodToUse = int.Parse(method);
-
-            //Add function enter inputs
+            //function enter inputs
             Console.Write("Please enter 1st input: ");
             string functionInput1 = Console.ReadLine();
             int functionArg1 = int.Parse(functionInput1);
@@ -34,11 +33,12 @@ namespace Prework_Calculator
                 //invoking Multiply method using user inputs.
                 Console.WriteLine($"The product of the two numbers is: {Multiply(functionArg1, functionArg2)}");
             }
-            else
+            else if (methodToUse == 4)
             {
                 //incoking Divide method using user inputs.
                 Console.WriteLine($"The quotient of the two numbers is: {Divide(functionArg1, functionArg2)}");
             }
+            else { Console.WriteLine("Invalid selection.  Please restart the app and try again."); }
             Console.ReadLine();
         }
 
