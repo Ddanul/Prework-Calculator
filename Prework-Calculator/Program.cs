@@ -19,11 +19,14 @@ namespace Prework_Calculator
             string functionInput2 = Console.ReadLine();
             int functionArg2 = int.Parse(functionInput2);
 
-            //invoking Add function using user inputs
+            //invoking Add method using user inputs
             Console.WriteLine($"The sum of those two numbers is: {Add(functionArg1, functionArg2)}");
 
-            //invoking Subtract function using user inputs.
+            //invoking Subtract method using user inputs.
             Console.WriteLine($"The difference of the two numbers is: {Subtract(functionArg1, functionArg2)}");
+
+            //invoking Multiply method using user inputs.
+            Console.WriteLine($"The product of the two numbers is: {Multiply(functionArg1, functionArg2)}");
 
             Console.ReadLine();
         }
@@ -38,5 +41,9 @@ namespace Prework_Calculator
             return num1 - num2;
         }
 
+        static int Multiply(int num1, int num2)
+        {
+            return num1 * num2;
+        }
     }
 }
