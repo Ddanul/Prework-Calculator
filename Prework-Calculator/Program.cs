@@ -28,6 +28,9 @@ namespace Prework_Calculator
             //invoking Multiply method using user inputs.
             Console.WriteLine($"The product of the two numbers is: {Multiply(functionArg1, functionArg2)}");
 
+            //incoking Divide method using user inputs.
+            Console.WriteLine($"The quotient of the two numbers is: {Divide(functionArg1, functionArg2)}");
+
             Console.ReadLine();
         }
 
@@ -44,6 +47,10 @@ namespace Prework_Calculator
         static int Multiply(int num1, int num2)
         {
             return num1 * num2;
+        }
+
+        static decimal Divide(decimal num1, decimal num2){
+            return num1 / num2;
         }
     }
 }
