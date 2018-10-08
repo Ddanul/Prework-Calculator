@@ -19,18 +19,26 @@ namespace Prework_Calculator
             string functionInput2 = Console.ReadLine();
             int functionArg2 = int.Parse(functionInput2);
 
-            //invoking Add method using user inputs
-            Console.WriteLine($"The sum of those two numbers is: {Add(functionArg1, functionArg2)}");
-
-            //invoking Subtract method using user inputs.
-            Console.WriteLine($"The difference of the two numbers is: {Subtract(functionArg1, functionArg2)}");
-
-            //invoking Multiply method using user inputs.
-            Console.WriteLine($"The product of the two numbers is: {Multiply(functionArg1, functionArg2)}");
-
-            //incoking Divide method using user inputs.
-            Console.WriteLine($"The quotient of the two numbers is: {Divide(functionArg1, functionArg2)}");
-
+            if (methodToUse == 1)
+            {
+                //invoking Add method using user inputs
+                Console.WriteLine($"The sum of those two numbers is: {Add(functionArg1, functionArg2)}");
+            }
+            else if (methodToUse == 2)
+            {
+                //invoking Subtract method using user inputs.
+                Console.WriteLine($"The difference of the two numbers is: {Subtract(functionArg1, functionArg2)}");
+            }
+            else if (methodToUse == 3)
+            {
+                //invoking Multiply method using user inputs.
+                Console.WriteLine($"The product of the two numbers is: {Multiply(functionArg1, functionArg2)}");
+            }
+            else
+            {
+                //incoking Divide method using user inputs.
+                Console.WriteLine($"The quotient of the two numbers is: {Divide(functionArg1, functionArg2)}");
+            }
             Console.ReadLine();
         }
 
