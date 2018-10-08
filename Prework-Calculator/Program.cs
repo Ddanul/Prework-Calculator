@@ -14,21 +14,29 @@ namespace Prework_Calculator
             //Add function enter inputs
             Console.Write("Please enter 1st input: ");
             string functionInput1 = Console.ReadLine();
-            int addFunctionArg1 = int.Parse(functionInput1);
+            int functionArg1 = int.Parse(functionInput1);
             Console.Write("Please enter 2nd input: ");
             string functionInput2 = Console.ReadLine();
-            int addFunctionArg2 = int.Parse(functionInput2);
+            int functionArg2 = int.Parse(functionInput2);
 
             //invoking Add function using user inputs
-            Console.WriteLine($"The sum of those two numbers is: {Add(addFunctionArg1, addFunctionArg2)}");
+            Console.WriteLine($"The sum of those two numbers is: {Add(functionArg1, functionArg2)}");
 
-            
+            //invoking Subtract function using user inputs.
+            Console.WriteLine($"The difference of the two numbers is: {Subtract(functionArg1, functionArg2)}");
+
             Console.ReadLine();
         }
 
-        static int Add(int add1, int add2)
+        static int Add(int num1, int num2)
         {
-            return add1 + add2;
+            return num1 + num2;
         }
+
+        static int Subtract(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+
     }
 }
